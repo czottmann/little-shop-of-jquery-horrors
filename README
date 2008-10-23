@@ -1,0 +1,24 @@
+A jQuery plugin or two. I don't know yet.
+
+
+
+jquery.sliceArray.js
+====================
+
+    $.sliceArray( arr, n );
+
+Splits an array [arr] into [n] slices, and returns a new array with [n] elements, each being a slice of the input array.
+
+Example:
+
+    var arr = [ "a", "b", "c", "d", "e", "f", "g", "h", "i" ];
+    var sliced_2 = $.sliceArray( arr, 2 );
+    var sliced_3 = $.sliceArray( arr, 3 );
+    var sliced_4 = $.sliceArray( arr, 4 );
+
+Results:
+
+    sliced_2: [ [ "a", "b", "c", "d", "e" ], [ "f", "g", "h", "i" ] ]
+    sliced_3: [ [ "a", "b", "c" ], [ "d", "e", "f" ], [ "g", "h", "i" ] ]
+    sliced_4: [ [ "a", "b", "c" ], [ "d", "e", "f" ], [ "g", "h", "i" ], [ ] ]
+
